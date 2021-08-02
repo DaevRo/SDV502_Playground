@@ -50,6 +50,6 @@ it('has instantiated', function () {
 
     expect(calculator).toBeTruthy()
     expect(calculator2).toBeTruthy()
-    expect(calculator).toEqual()
+    expect(calculator).toEqual(calculator2)
     expect(calculator.constructor.name).toContain('Calculator')
 })
