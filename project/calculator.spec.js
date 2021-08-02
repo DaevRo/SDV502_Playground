@@ -44,3 +44,12 @@ it ('has constructor', function () {
  
     expect(calculator).toEqual(calculator2)
 })
+it('has instantiated', function () {
+    const calculator = new Calculator()
+    const calculator2 = new Calculator()
+
+    expect(calculator).toBeTruthy()
+    expect(calculator2).toBeTruthy()
+    expect(calculator).toBeEqual()
+    expect(calculator.constructor.name).toContain('Calculator')
+})
