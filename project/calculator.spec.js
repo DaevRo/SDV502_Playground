@@ -30,4 +30,17 @@ describe('calculator,js', funciton() {
 
         expect(calculator.total).toBe(20)
     })
+
+    it('should throw an error if total is not a number', function() {
+        const calculator = new Calculator()
+
+        expect(calculator.total).toBe(0)
+        expect(calculator.total).toBeFalsy()
+    })
+    it('has constructor', function() {
+        const calculator = new Calculator()
+        const calculator2 = new Calculator()
+
+        expect(calculator).toEqual(calculator2)
+    })
 })
